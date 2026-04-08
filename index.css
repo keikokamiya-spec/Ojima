@@ -268,47 +268,62 @@ nav ul li a {
 }
 
 /* 3-Image Band */
-.image-band {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  height: 400px;
-}
-
-.image-band-item {
-  position: relative;
+/* Gallery Slider Section */
+.gallery-section {
+  padding: 100px 0;
   overflow: hidden;
+  background-color: var(--color-white);
 }
 
-.image-band-item img {
+.gallery-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+
+.gallery-track:hover {
+  animation-play-state: paused;
+}
+
+.gallery-item {
+  width: 350px;
+  flex-shrink: 0;
+  margin-right: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
 
-.image-band-item:hover img {
+.gallery-item:hover img {
   transform: scale(1.1);
 }
 
-.image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(123, 79, 40, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-white);
-  font-size: 1.5rem;
-  font-weight: 900;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-370px * 7)); } /* 350px width + 20px margin * 7 original items */
 }
 
-.image-band-item:hover .image-overlay {
-  opacity: 1;
+@media (max-width: 768px) {
+  .gallery-item {
+    width: 280px;
+  }
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-300px * 7)); } /* 280px width + 20px margin * 7 original items */
+  }
 }
 
 /* Party Menu */

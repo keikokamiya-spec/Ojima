@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <meta name="description" content="相鉄線 鶴ヶ峰駅 徒歩3分。真心込めてお届けする手作りの味。ハンバーグやカレーなど、毎日でも通いたくなるアットホームな洋食レストランです。">
   <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 
   <!-- Header -->
@@ -25,7 +27,12 @@
     </nav>
     <div class="header-right">
       <a href="tel:045-374-0735" class="tel-link">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+          </path>
+        </svg>
         <span>045-374-0735</span>
       </a>
       <a href="https://www.hotpepper.jp/strJ000249942/" target="_blank" class="btn-reserve">ご予約</a>
@@ -34,7 +41,7 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <img src="mitsuwa_hero_1774071885219.png" alt="店内雰囲気" class="hero-bg">
+    <img src="img/store1.png" alt="店内雰囲気" class="hero-bg">
     <div class="hero-content">
       <p>真心込める、街の洋食屋</p>
       <h1>洋食レストラン<br>みつわ</h1>
@@ -47,7 +54,7 @@
   <section id="greeting" class="section container">
     <div class="greeting">
       <div class="greeting-img">
-        <img src="mitsuwa_interior_1774071900377.png" alt="店内の様子">
+        <img src="img/food4.png" alt="店内の様子">
       </div>
       <div class="greeting-text">
         <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">ごあいさつ</h2>
@@ -77,7 +84,7 @@
 
   <!-- Concept Section -->
   <section id="concept" class="concept">
-    <img src="mitsuwa_curry_hamburg_1774071913441.png" alt="こだわり料理" class="concept-bg">
+    <img src="img/food5.png" alt="こだわり料理" class="concept-bg">
     <div class="concept-content">
       <h2>素材と手作りへのこだわり</h2>
       <p>
@@ -129,21 +136,30 @@
     </div>
   </section>
 
-  <!-- 3-Image Band -->
-  <div class="image-band">
-    <div class="image-band-item">
-      <img src="mitsuwa_3plates_1774071930561.png" alt="洋食">
-      <div class="image-overlay">洋食・定食</div>
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <h2 class="section-title">ギャラリー</h2>
+    <div class="gallery-slider">
+      <div class="gallery-track">
+        <!-- Original Set -->
+        <div class="gallery-item"><img src="img/food.jpg" alt="料理"></div>
+        <div class="gallery-item"><img src="img/food2.jpg" alt="料理"></div>
+        <div class="gallery-item"><img src="img/food4.png" alt="料理"></div>
+        <div class="gallery-item"><img src="img/food5.png" alt="料理"></div>
+        <div class="gallery-item"><img src="img/store.jpg" alt="店内"></div>
+        <div class="gallery-item"><img src="img/store1.png" alt="店内"></div>
+        <div class="gallery-item"><img src="img/store2.png" alt="外観"></div>
+        <!-- Duplicated Set for Loop -->
+        <div class="gallery-item"><img src="img/food.jpg" alt="料理"></div>
+        <div class="gallery-item"><img src="img/food2.jpg" alt="料理"></div>
+        <div class="gallery-item"><img src="img/food4.png" alt="料理"></div>
+        <div class="gallery-item"><img src="img/food5.png" alt="料理"></div>
+        <div class="gallery-item"><img src="img/store.jpg" alt="店内"></div>
+        <div class="gallery-item"><img src="img/store1.png" alt="店内"></div>
+        <div class="gallery-item"><img src="img/store2.png" alt="外観"></div>
+      </div>
     </div>
-    <div class="image-band-item">
-      <img src="mitsuwa_3plates_1774071930561.png" alt="アルコール" style="object-position: top right;">
-      <div class="image-overlay">アルコール</div>
-    </div>
-    <div class="image-band-item">
-      <img src="mitsuwa_pudding_1774071946459.png" alt="甘味">
-      <div class="image-overlay">甘味・デザート</div>
-    </div>
-  </div>
+  </section>
 
   <div class="section-separator">◆</div>
 
@@ -174,9 +190,10 @@
     <h2 class="section-title">アクセス・店舗情報</h2>
     <div class="access-grid">
       <div class="map-container">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.790901241979!2d139.54415517625121!3d35.47481974087851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185994b7c8976b%3A0xc3f83769c8114f2!2z5rSL6aOf44Os44K544OI44Op44OzIOOBvOOBpOOCjw!5e0!3m2!1sja!2sjp!4v1711000000000!5m2!1sja!2sjp" 
-          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6498.3812927332165!2d139.547631!3d35.4748266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601859c7450d9d39%3A0x42b77e87892e9eee!2z5rSL6aOf44Os44K544OI44Op44OzIOOBv-OBpOOCjw!5e0!3m2!1sja!2sjp!4v1775615754039!5m2!1sja!2sjp"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="info-card">
         <h3>店舗情報</h3>
@@ -196,7 +213,8 @@
           <span class="info-label">アクセス</span>
           <p>相鉄線 鶴ヶ峰駅 徒歩3分</p>
         </div>
-        <a href="https://www.hotpepper.jp/strJ000249942/" target="_blank" class="btn-reserve" style="display: block; text-align: center;">ネット予約はこちら</a>
+        <a href="https://www.hotpepper.jp/strJ000249942/" target="_blank" class="btn-reserve"
+          style="display: block; text-align: center;">ネット予約はこちら</a>
       </div>
     </div>
   </section>
@@ -214,8 +232,9 @@
       </ul>
     </div>
     <p>神奈川県横浜市旭区鶴ケ峰１丁目１２−３ 小林ビル<br>TEL: 045-374-0735</p>
-    <p class="footer-copy">&copy; 2024 洋食レストラン みつわ. All Rights Reserved.</p>
+    <p class="footer-copy">&copy; 2026 洋食レストラン みつわ. All Rights Reserved.</p>
   </footer>
 
 </body>
+
 </html>
