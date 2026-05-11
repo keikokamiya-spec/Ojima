@@ -4,237 +4,474 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>洋食レストラン みつわ | 横浜市旭区鶴ヶ峰の街の洋食屋</title>
-  <meta name="description" content="相鉄線 鶴ヶ峰駅 徒歩3分。真心込めてお届けする手作りの味。ハンバーグやカレーなど、毎日でも通いたくなるアットホームな洋食レストランです。">
+  <title>海鮮旬菜 Ojima | 千葉県習志野市 京成大久保駅 徒歩7分</title>
+  <meta name="description" content="市場から毎朝仕入れる旬の鮮魚と四季折々の野菜。常時20種以上の地酒とともに、ゆるりと過ごす大人の時間をお届けします。千葉県習志野市大久保、京成大久保駅 徒歩7分。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="logo">
-      洋食レストラン みつわ
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#greeting">ごあいさつ</a></li>
-        <li><a href="#concept">コンセプト</a></li>
-        <li><a href="#menu">メニュー</a></li>
-        <li><a href="#party">宴会</a></li>
-        <li><a href="#access">アクセス</a></li>
-      </ul>
-    </nav>
-    <div class="header-right">
-      <a href="tel:045-374-0735" class="tel-link">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path
-            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-          </path>
-        </svg>
-        <span>045-374-0735</span>
+  <!-- ========== HEADER ========== -->
+  <header id="header">
+    <div class="header-inner">
+      <a href="#top" class="logo">
+        <span class="logo-en">Kaisen Shunsai</span>
+        <span class="logo-jp">海鮮旬菜 Ojima</span>
       </a>
-      <a href="https://www.hotpepper.jp/strJ000249942/" target="_blank" class="btn-reserve">ご予約</a>
+
+      <nav class="global-nav" id="globalNav">
+        <ul>
+          <li><a href="#concept" class="nav-link">こだわり</a></li>
+          <li><a href="#story" class="nav-link">お店について</a></li>
+          <li><a href="#menu" class="nav-link">メニュー</a></li>
+          <li><a href="#gallery" class="nav-link">ギャラリー</a></li>
+          <li><a href="#information" class="nav-link">店舗情報</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <a href="tel:047-479-3866" class="btn-tel">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.21 12 19.79 19.79 0 0 1 1.14 3.4 2 2 0 0 1 3.11 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span class="tel-num">047-479-3866</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="img/store1.png" alt="店内雰囲気" class="hero-bg">
+  <!-- Mobile Overlay Nav -->
+  <div class="mobile-nav-overlay" id="mobileNav">
+    <nav>
+      <ul>
+        <li><a href="#concept" class="mobile-nav-link">こだわり</a></li>
+        <li><a href="#story" class="mobile-nav-link">お店について</a></li>
+        <li><a href="#menu" class="mobile-nav-link">メニュー</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">ギャラリー</a></li>
+        <li><a href="#information" class="mobile-nav-link">店舗情報</a></li>
+      </ul>
+      <a href="tel:047-479-3866" class="mobile-tel">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.21 12 19.79 19.79 0 0 1 1.14 3.4 2 2 0 0 1 3.11 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        047-479-3866
+      </a>
+    </nav>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="top">
+    <div class="hero-bg-wrap">
+      <img src="img/exterior_0.jpg" alt="海鮮旬菜Ojima 外観" class="hero-bg">
+      <div class="hero-overlay"></div>
+    </div>
     <div class="hero-content">
-      <p>真心込める、街の洋食屋</p>
-      <h1>洋食レストラン<br>みつわ</h1>
+      <p class="hero-en">Seasonal Seafood &amp; Japanese Sake</p>
+      <h1 class="hero-title">
+        <span class="pc-only">旬の一皿と、地酒と。<br>ゆるりと過ごす、大人の宵。</span>
+        <span class="sp-only">旬の一皿と、地酒と。</span>
+      </h1>
+      <p class="hero-sub pc-only">市場直送の鮮魚と、四季折々の恵みを。</p>
+      <p class="hero-sub sp-only">四季折々の旬を、心ゆくまで。</p>
+      <a href="#concept" class="hero-scroll" aria-label="コンテンツへスクロール">
+        <span>SCROLL</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </a>
     </div>
   </section>
 
-  <div class="section-separator">◆</div>
-
-  <!-- Greeting Section -->
-  <section id="greeting" class="section container">
-    <div class="greeting">
-      <div class="greeting-img">
-        <img src="img/sweets2.jpg" alt="店内の様子">
+  <!-- ========== CONCEPT ========== -->
+  <section id="concept" class="section-concept">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-en">CONCEPT</p>
+        <h2 class="section-title">三つのこだわり</h2>
+        <div class="gold-bar"></div>
       </div>
-      <div class="greeting-text">
-        <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">ごあいさつ</h2>
+
+      <div class="concept-grid">
+        <div class="concept-card reveal">
+          <div class="concept-icon">
+            <!-- Fish icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 32 C12 20, 28 16, 44 24 C52 28, 58 26, 60 32 C58 38, 52 36, 44 40 C28 48, 12 44, 8 32Z"/>
+              <circle cx="18" cy="28" r="2.5" fill="currentColor" stroke="none"/>
+              <path d="M52 22 L60 16 M52 42 L60 48"/>
+            </svg>
+          </div>
+          <p class="concept-card-en">Fresh Catch</p>
+          <h3 class="concept-card-title">毎朝市場直送の<br>旬の鮮魚</h3>
+          <p class="concept-card-text">市場から毎朝仕入れる獲れたての鮮魚を、その日のうちにお届けします。素材本来の旨みを最大限に引き出した一皿で、その時期にしか出会えない「旬」の美味しさを。</p>
+        </div>
+
+        <div class="concept-card reveal">
+          <div class="concept-icon">
+            <!-- Sake tokkuri icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M28 8 L36 8 C38 8 40 10 40 12 L40 18 C44 22 46 28 44 36 C42 46 36 52 32 52 C28 52 22 46 20 36 C18 28 20 22 24 18 L24 12 C24 10 26 8 28 8Z"/>
+              <line x1="26" y1="10" x2="38" y2="10"/>
+              <path d="M27 28 Q32 24 37 28"/>
+            </svg>
+          </div>
+          <p class="concept-card-en">Japanese Sake</p>
+          <h3 class="concept-card-title">常時20種以上の<br>厳選地酒</h3>
+          <p class="concept-card-text">日本酒をメインに、常時20種類以上の地酒を取り揃えています。旬の料理に寄り添う一杯を、粋に楽しんでいただけます。</p>
+        </div>
+
+        <div class="concept-card reveal">
+          <div class="concept-icon">
+            <!-- Noren/room icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="10" y="10" width="44" height="44" rx="2"/>
+              <path d="M10 24 L54 24"/>
+              <path d="M24 24 L24 54"/>
+              <path d="M16 10 L16 24 M32 10 L32 24 M48 10 L48 24"/>
+            </svg>
+          </div>
+          <p class="concept-card-en">Relaxing Space</p>
+          <h3 class="concept-card-title">一人からご宴会まで<br>落ち着いた和空間</h3>
+          <p class="concept-card-text">カウンター席でのひとり飲みから、襖を繋げた座敷でのご宴会まで対応。温かみある和の空間で、自分のペースに合わせてゆったりお過ごしください。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STORY ========== -->
+  <section id="story" class="section-story">
+    <div class="story-bg-wrap">
+      <img src="img/interior_0.jpg" alt="海鮮旬菜Ojima 店内" class="story-bg">
+      <div class="story-overlay"></div>
+    </div>
+    <div class="container story-inner reveal">
+      <div class="section-head light">
+        <p class="section-en">STORY</p>
+        <h2 class="section-title">お店について</h2>
+        <div class="gold-bar"></div>
+      </div>
+      <div class="story-text">
         <p>
-          横浜市旭区鶴ヶ峰の静かな通りに店を構えて、<br>
-          早いもので長い年月が経ちました。<br>
-          「みつわ」は、お客様お一人おひとりとの<br>
-          会話を大切にする、優しい時間を提供したいと<br>
-          願っています。
+          「立派な門構え、立派な空間、贅沢な調理場」—<br class="pc-only">
+          そう言っていただけるお店を目指して、私たちは毎日市場へ足を運びます。
         </p>
         <p>
-          お昼はボリュームたっぷりの定食を、<br>
-          夜はゆったりとワインやビールを片手に。<br>
-          どんな時でも、手作りの味を<br>
-          真心込めてお届けします。
+          旬の鮮魚は、その朝に水揚げされたものを厳選。<br class="pc-only">
+          四季折々の野菜は、素材の力をそのままに。<br class="pc-only">
+          素材本来の旨みを活かした一皿一皿が、Ojimaのこだわりです。
         </p>
         <p>
-          気取らず、ゆったりと。<br>
-          我が家に帰ってきたような心地よさを<br>
-          感じていただければ幸いです。
+          30歳を過ぎた大人が、仕事帰りにふらりと立ち寄れる。<br class="pc-only">
+          家族で特別な夜を過ごせる。<br class="pc-only">
+          そんな「ゆるりと過ごす大人の時間」を、地酒とともにご提供します。
         </p>
       </div>
     </div>
   </section>
 
-  <div class="section-separator">◆</div>
+  <!-- ========== MENU ========== -->
+  <section id="menu" class="section-menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-en">MENU</p>
+        <h2 class="section-title">おすすめメニュー</h2>
+        <div class="gold-bar"></div>
+      </div>
 
-  <!-- Concept Section -->
-  <section id="concept" class="concept">
-    <img src="img/food5.png" alt="こだわり料理" class="concept-bg">
-    <div class="concept-content">
-      <h2>素材と手作りへのこだわり</h2>
-      <p>
-        毎朝市場から仕入れる新鮮な素材を使い、<br>
-        ソースからドレッシングまで、<br>
-        すべて店内で一つひとつ手作りしています。<br>
-        「また食べたい」と思っていただけるよう、<br>
-        丁寧な仕事を心がけています。
-      </p>
+      <div class="menu-grid" id="menuGrid">
+        <div class="menu-card reveal">
+          <div class="menu-card-img">
+            <img src="img/ojima_food_0.jpg" alt="旬の鮮魚料理">
+          </div>
+          <div class="menu-card-body">
+            <p class="menu-category-label">旬の一皿</p>
+            <h3 class="menu-item-name">鮮魚のお造り盛り合わせ</h3>
+            <p class="menu-item-desc">その日の朝に市場から仕入れた旬の鮮魚を、職人の技で丁寧に盛り合わせました。</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal">
+          <div class="menu-card-img">
+            <img src="img/ojima_food_3.jpg" alt="季節の小鉢料理">
+          </div>
+          <div class="menu-card-body">
+            <p class="menu-category-label">旬の一皿</p>
+            <h3 class="menu-item-name">季節野菜の炊き合わせ</h3>
+            <p class="menu-item-desc">四季折々の野菜を丁寧に炊き上げた、素材の旨みが染み渡る一品。</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal">
+          <div class="menu-card-img">
+            <img src="img/ojima_food_6.jpg" alt="焼き魚料理">
+          </div>
+          <div class="menu-card-body">
+            <p class="menu-category-label">焼き・揚げ</p>
+            <h3 class="menu-item-name">鮮魚の塩焼き</h3>
+            <p class="menu-item-desc">市場直送の鮮魚を塩でシンプルに焼き上げ。素材の旨みをそのままに。</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal menu-card-hidden">
+          <div class="menu-card-img">
+            <img src="img/ojima_food_9.jpg" alt="小鉢・一品料理">
+          </div>
+          <div class="menu-card-body">
+            <p class="menu-category-label">一品料理</p>
+            <h3 class="menu-item-name">旬野菜の天ぷら盛り合わせ</h3>
+            <p class="menu-item-desc">季節の野菜を衣をつけてさっくり揚げた、日本酒との相性抜群の一品。</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal menu-card-hidden">
+          <div class="menu-card-img">
+            <img src="img/ojima_food_12.jpg" alt="〆料理">
+          </div>
+          <div class="menu-card-body">
+            <p class="menu-category-label">〆・ご飯もの</p>
+            <h3 class="menu-item-name">鮮魚の漬け丼</h3>
+            <p class="menu-item-desc">厳選した鮮魚を特製タレに漬け込んだ、濃厚な旨みの〆の一品。</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal menu-card-hidden">
+          <div class="menu-card-img">
+            <img src="img/ojima_food_15.jpg" alt="地酒・ドリンク">
+          </div>
+          <div class="menu-card-body">
+            <p class="menu-category-label">地酒・ドリンク</p>
+            <h3 class="menu-item-name">常時20種以上の厳選地酒</h3>
+            <p class="menu-item-desc">全国各地から厳選した地酒を常時20種類以上ご用意。旬の料理との組み合わせをお楽しみください。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-more-wrap" id="menuMoreWrap">
+        <button class="btn-more" id="btnMore">
+          <span>もっと見る</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+      </div>
+
+      <p class="menu-note">※ 日によってメニューは変動します</p>
+      <p class="menu-reserve-note">※ ご予約は電話のみ承っております。お電話にてお気軽にお問い合わせください。</p>
+      <div class="menu-tel-cta">
+        <a href="tel:047-479-3866" class="btn-tel-large">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.21 12 19.79 19.79 0 0 1 1.14 3.4 2 2 0 0 1 3.11 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          047-479-3866
+        </a>
+      </div>
     </div>
   </section>
 
-  <div class="section-separator">◆</div>
-
-  <!-- Menu Section -->
-  <section id="menu" class="section container menu-section">
-    <h2 class="section-title">メニュー</h2>
-    <div class="menu-grid">
-      <div class="menu-category">
-        <h3>洋食・定食</h3>
-        <ul class="menu-list">
-          <li>ハンバーグ <span class="menu-tag">人気</span></li>
-          <li style="font-size: 0.9rem; color: #666; margin-top: -10px; margin-bottom: 10px;">デミグラス・おろし・チーズなど各種ソース</li>
-          <li>カレーライス</li>
-          <li style="font-size: 0.9rem; color: #666; margin-top: -10px; margin-bottom: 10px;">チキン・ビーフ・野菜 日替わり</li>
-          <li>スパゲティ各種 <span class="menu-tag">人気</span></li>
-          <li style="font-size: 0.9rem; color: #666; margin-top: -10px; margin-bottom: 10px;">ナポリタン・ミートソース・ペペロンチーノ</li>
-          <li>ポークソテー</li>
-          <li>エビフライ</li>
-        </ul>
-      </div>
-      <div class="menu-category">
-        <h3>アルコール</h3>
-        <ul class="menu-list">
-          <li>ビール（生・瓶）</li>
-          <li>ワイン・カクテル各種</li>
-          <li>ハイボール・サワー各種</li>
-        </ul>
-      </div>
-      <div class="menu-category">
-        <h3>甘味・デザート</h3>
-        <ul class="menu-list">
-          <li>手作りプリン</li>
-          <li>パフェ各種</li>
-          <li>ケーキ（日替わり）</li>
-          <li>アイスクリーム</li>
-        </ul>
-      </div>
+  <!-- ========== GALLERY ========== -->
+  <section id="gallery" class="section-gallery">
+    <div class="section-head reveal">
+      <p class="section-en">GALLERY</p>
+      <h2 class="section-title">ギャラリー</h2>
+      <div class="gold-bar"></div>
     </div>
-  </section>
 
-  <!-- Gallery Section -->
-  <section id="gallery" class="gallery-section">
-    <h2 class="section-title">ギャラリー</h2>
     <div class="gallery-slider">
       <div class="gallery-track">
         <!-- Original Set -->
-        <div class="gallery-item"><img src="img/food.jpg" alt="料理"></div>
-        <div class="gallery-item"><img src="img/food2.jpg" alt="料理"></div>
-        <div class="gallery-item"><img src="img/food4.png" alt="料理"></div>
-        <div class="gallery-item"><img src="img/food5.png" alt="料理"></div>
-        <div class="gallery-item"><img src="img/store.jpg" alt="店内"></div>
-        <div class="gallery-item"><img src="img/store1.png" alt="店内"></div>
-        <div class="gallery-item"><img src="img/store2.png" alt="外観"></div>
-        <!-- Duplicated Set for Loop -->
-        <div class="gallery-item"><img src="img/food.jpg" alt="料理"></div>
-        <div class="gallery-item"><img src="img/food2.jpg" alt="料理"></div>
-        <div class="gallery-item"><img src="img/food4.png" alt="料理"></div>
-        <div class="gallery-item"><img src="img/food5.png" alt="料理"></div>
-        <div class="gallery-item"><img src="img/store.jpg" alt="店内"></div>
-        <div class="gallery-item"><img src="img/store1.png" alt="店内"></div>
-        <div class="gallery-item"><img src="img/store2.png" alt="外観"></div>
+        <div class="gallery-item"><img src="img/ojima_food_1.jpg" alt="旬の料理"></div>
+        <div class="gallery-item"><img src="img/interior_1.jpg" alt="店内の様子"></div>
+        <div class="gallery-item"><img src="img/ojima_food_4.jpg" alt="旬の料理"></div>
+        <div class="gallery-item"><img src="img/exterior_1.jpg" alt="外観"></div>
+        <div class="gallery-item"><img src="img/ojima_food_7.jpg" alt="旬の料理"></div>
+        <div class="gallery-item"><img src="img/interior_2.jpg" alt="店内の様子"></div>
+        <div class="gallery-item"><img src="img/ojima_food_10.jpg" alt="旬の料理"></div>
+        <!-- Duplicate Set for seamless loop -->
+        <div class="gallery-item"><img src="img/ojima_food_1.jpg" alt="旬の料理"></div>
+        <div class="gallery-item"><img src="img/interior_1.jpg" alt="店内の様子"></div>
+        <div class="gallery-item"><img src="img/ojima_food_4.jpg" alt="旬の料理"></div>
+        <div class="gallery-item"><img src="img/exterior_1.jpg" alt="外観"></div>
+        <div class="gallery-item"><img src="img/ojima_food_7.jpg" alt="旬の料理"></div>
+        <div class="gallery-item"><img src="img/interior_2.jpg" alt="店内の様子"></div>
+        <div class="gallery-item"><img src="img/ojima_food_10.jpg" alt="旬の料理"></div>
       </div>
     </div>
   </section>
 
-  <div class="section-separator">◆</div>
-
-  <!-- Party Menu -->
-  <section id="party" class="section party-menu">
+  <!-- ========== INFORMATION ========== -->
+  <section id="information" class="section-information">
     <div class="container">
-      <h2 class="section-title">宴会・パーティー</h2>
-      <div class="party-list">
-        <div class="party-item">
-          <h3>誕生日・記念日</h3>
-          <p>デザートプレート等、お気軽にご相談ください。</p>
-        </div>
-        <div class="party-item">
-          <h3>各種宴会</h3>
-          <p>忘年会・新年会・歓送迎会のご予約承ります。</p>
-        </div>
+      <div class="section-head reveal">
+        <p class="section-en">INFORMATION</p>
+        <h2 class="section-title">店舗情報</h2>
+        <div class="gold-bar"></div>
       </div>
-      <div style="text-align: center; margin-top: 50px;">
-        <a href="https://www.hotpepper.jp/strJ000249942/" target="_blank" class="btn-reserve">プラン詳細・ご予約はこちら</a>
+
+      <div class="info-grid reveal">
+        <div class="info-table-wrap">
+          <table class="info-table">
+            <tbody>
+              <tr>
+                <th>営業時間</th>
+                <td>
+                  <span class="info-day">平日</span> 17:00 〜 23:00<br>
+                  <span class="info-day">土日祝</span> 16:00 〜 23:00
+                </td>
+              </tr>
+              <tr>
+                <th>ラストオーダー</th>
+                <td>フード 22:00 &ensp;／&ensp; ドリンク 22:30</td>
+              </tr>
+              <tr>
+                <th>定休日</th>
+                <td>毎週水曜日</td>
+              </tr>
+              <tr>
+                <th>テイクアウト</th>
+                <td>店舗営業時間に準ずる</td>
+              </tr>
+              <tr>
+                <th>アクセス</th>
+                <td>京成大久保駅 徒歩7分</td>
+              </tr>
+              <tr>
+                <th>駐車場</th>
+                <td>2台あり</td>
+              </tr>
+              <tr>
+                <th>住所</th>
+                <td>〒275-0011<br>千葉県習志野市大久保1-29-12<br>セザール大久保1F</td>
+              </tr>
+              <tr>
+                <th>電話</th>
+                <td><a href="tel:047-479-3866" class="info-tel">047-479-3866</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="info-note">※ ご予約は電話のみ承っております。お電話でお願いいたします。</p>
+        </div>
+
+        <div class="info-map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.9!2d140.0270!3d35.6850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z5rWm6bq75pe25ZGAO-S6uuOCu-OCtuODq-WkqOS4reS6uuW3peOCiek_jkO1F!5e0!3m2!1sja!2sjp!4v1715000000000!5m2!1sja!2sjp"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="海鮮旬菜Ojima 地図"></iframe>
+        </div>
       </div>
     </div>
   </section>
 
-  <div class="section-separator">◆</div>
-
-  <!-- Access Section -->
-  <section id="access" class="section container">
-    <h2 class="section-title">アクセス・店舗情報</h2>
-    <div class="access-grid">
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6498.3812927332165!2d139.547631!3d35.4748266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601859c7450d9d39%3A0x42b77e87892e9eee!2z5rSL6aOf44Os44K544OI44Op44OzIOOBv-OBpOOCjw!5e0!3m2!1sja!2sjp!4v1775615754039!5m2!1sja!2sjp"
-          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner container">
+      <div class="footer-logo">
+        <p class="footer-logo-en">Kaisen Shunsai</p>
+        <p class="footer-logo-jp">海鮮旬菜 Ojima</p>
       </div>
-      <div class="info-card">
-        <h3>店舗情報</h3>
-        <div class="info-item">
-          <span class="info-label">住所</span>
-          <p>神奈川県横浜市旭区鶴ケ峰１丁目１２−３ 小林ビル</p>
-        </div>
-        <div class="info-item">
-          <span class="info-label">TEL / FAX</span>
-          <p>045-374-0735</p>
-        </div>
-        <div class="info-item">
-          <span class="info-label">営業時間</span>
-          <p>10:00〜21:00<br><span style="font-size: 0.8rem;">（天候などによりお休みあり）</span></p>
-        </div>
-        <div class="info-item">
-          <span class="info-label">アクセス</span>
-          <p>相鉄線 鶴ヶ峰駅 徒歩3分</p>
-        </div>
-        <a href="https://www.hotpepper.jp/strJ000249942/" target="_blank" class="btn-reserve"
-          style="display: block; text-align: center;">ネット予約はこちら</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-logo">洋食レストラン みつわ</div>
-    <div class="footer-nav">
-      <ul>
-        <li><a href="#greeting">ごあいさつ</a></li>
-        <li><a href="#concept">コンセプト</a></li>
-        <li><a href="#menu">メニュー</a></li>
-        <li><a href="#party">宴会</a></li>
-        <li><a href="#access">アクセス</a></li>
-      </ul>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#concept">こだわり</a></li>
+          <li><a href="#story">お店について</a></li>
+          <li><a href="#menu">メニュー</a></li>
+          <li><a href="#gallery">ギャラリー</a></li>
+          <li><a href="#information">店舗情報</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-info">
+        <p>
+          <a href="tel:047-479-3866" class="footer-tel">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.21 12 19.79 19.79 0 0 1 1.14 3.4 2 2 0 0 1 3.11 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            047-479-3866
+          </a>
+        </p>
+        <p class="footer-address">〒275-0011 千葉県習志野市大久保1-29-12 セザール大久保1F</p>
+        <p class="footer-hours">平日 17:00〜23:00 &ensp;／&ensp; 土日祝 16:00〜23:00 &ensp;／&ensp; 定休日：毎週水曜</p>
+      </div>
+
+      <p class="footer-copy">&copy; 2026 海鮮旬菜 Ojima. All Rights Reserved.</p>
     </div>
-    <p>神奈川県横浜市旭区鶴ケ峰１丁目１２−３ 小林ビル<br>TEL: 045-374-0735</p>
-    <p class="footer-copy">&copy; 2026 洋食レストラン みつわ. All Rights Reserved.</p>
   </footer>
 
-</body>
+  <script>
+    // ---- Hamburger Menu ----
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
 
+    function toggleMenu(open) {
+      hamburger.setAttribute('aria-expanded', open);
+      hamburger.classList.toggle('active', open);
+      mobileNav.classList.toggle('open', open);
+      document.body.classList.toggle('nav-open', open);
+    }
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = hamburger.getAttribute('aria-expanded') === 'true';
+      toggleMenu(!isOpen);
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => toggleMenu(false));
+    });
+
+    document.querySelector('.mobile-tel').addEventListener('click', () => toggleMenu(false));
+
+    // ---- Header scroll effect ----
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // ---- Scroll reveal ----
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    // ---- Menu "もっと見る" ----
+    const btnMore = document.getElementById('btnMore');
+    const menuMoreWrap = document.getElementById('menuMoreWrap');
+    const hiddenCards = document.querySelectorAll('.menu-card-hidden');
+
+    btnMore.addEventListener('click', () => {
+      hiddenCards.forEach(card => {
+        card.classList.remove('menu-card-hidden');
+        setTimeout(() => revealObserver.observe(card), 50);
+      });
+      menuMoreWrap.style.display = 'none';
+    });
+
+    // ---- Smooth scroll for anchor links ----
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const headerH = document.getElementById('header').offsetHeight;
+          const top = target.getBoundingClientRect().top + window.scrollY - headerH;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
 </html>
